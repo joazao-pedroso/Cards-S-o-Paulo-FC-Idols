@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coiny&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Coiny&family=Dangrek&family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+/* Projeto CARD */
+
+
+
+
+* {
+    font-family: Segoe UI;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: "Holtwood One SC", serif;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 0px;
+}
+
+h3{
+    font-family: 'Holtwood One SC';
+    font-size: 25px;
+}
+
+p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    color: #FFF;
+    background: rgb(221, 5, 5);
+    background: radial-gradient(circle, rgba(221, 5, 5, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+header {
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.123) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 250px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 2px;
+
+}
+
+
+header img {
+    padding: 1px;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 30px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#ff0000, #00000079);
+    transition: all .5s;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.card:hover {
+    background-image: linear-gradient(#ff0000, #00000079);
+}
+
+.card .img {
+
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+.ceni .img {
+    background-image: url('https://m.media-amazon.com/images/I/51inpq6ihfL._AC_UF1000,1000_QL80_.jpg');
+}
+
+.rai .img {
+    background-image: url('https://i0.wp.com/saopaulo.blog/wp-content/uploads/2020/03/rai.jpg?resize=616%2C397&ssl=1');
+}
+.muller .img {
+    background-image: url('https://cardosinho.blog.br/wp-content/uploads/2015/02/sao-paulo-muller-480-getty-images.jpg');
+}
+.luis .img {
+    background-image: url('https://s.glbimg.com/es/ge/f/original/2011/03/11/fut_luisfabiano2_disp.jpg');
+}
+.lugano .img {
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_crop,w_1984,h_1116,x_0,y_0/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/theplayerstribune-br/01fpzmk9ay484w3s9wyr.jpg');
+}
+.leonidas .img {
+    background-image: url('https://lncimg.lance.com.br/cdn-cgi/image/width=1300,height=750,quality=75,background=white,fit=pad/uploads/2021/09/06/6136614fa5d8f.jpeg');
+}
+
+.zetti .img {
+    background-image: url('https://italianismo.com.br/wp-content/uploads/2023/09/zetti-spfc-min.png');
+}
+
+.chulapa .img {
+    background-image: url('data:image/jpeg;base64,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');
+}
+
+.miranda .img {
+    background-image: url('https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/dataimagejpegbase649j4AAQSkZJRgABAQEBLAEsAAD4QUWRX-16feffcfc77b7725b09e457013d1c3d9.jpg');
+}
+
+.mineiro .img {
+    background-image: url('https://s2-ge.glbimg.com/0qOgtqsdNy0ee2QDE8UXt_51FBc=/0x0:800x515/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/C/V/xAv98FRIAsCDdaQVYf3g/mineiro.jpg');
+}
+
+.kaka .img {
+    background-image: url('https://jpimg.com.br/uploads/2017/04/349276537-kaka-comemora-com-camisa-do-sao-paulo.jpg');
+}
+
+.cafu .img {
+    background-image: url('https://portaldosaopaulino.com.br/wp-content/uploads/2023/05/Cafu-Sao-Paulo-x-Barcelona.jpg');
+}
+
+.cicinho .img {
+    background-image: url('https://sportbuzz.uol.com.br/media/uploads/sao-paulo-x-flamengo-cicinho-aponta-para-massacre-na-copa-do-brasil.jpg');
+}
+
+.hernanes .img {
+    background-image: url('https://tmssl.akamaized.net/images/foto/galerie/hernanes-sao-paulo-1605181962-51260.jpg?lm=1605181991');
+}
+
+.careca .img {
+    background-image: url('https://conteudo.imguol.com.br/c/esporte/e9/2017/06/07/careca-ex-atacante-do-sao-paulo-1496848304712_v2_750x642.jpg');
+}
+
+.leandro-guerreiro .img {
+    background-image: url('https://i.pinimg.com/originals/73/09/f3/7309f380c0829b2cad7dbd48f5c51aca.jpg');
+}
+
+.tele .img {
+    background-image: url('https://fairplay.pt/wp-content/uploads/2021/05/Tele-Santana-SP.jpg');
+}
+
+.calleri .img {
+    background-image: url('https://trivela.com.br/wp-content/uploads/2024/01/ICONSPORT_sipausa_50932051-scaled.jpg');
+}
+
+.lucas .img {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/1200/1200/middle/images.terra.com/2023/07/28/533202254-lucas-moura-no-sao-paulo.jpg');
+}
+
+.toninho .img {
+    background-image: url('https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt4dd8132adde53e5b/60dac013bcc58b0f8f855b24/e1329e7e377d5cca5f11472185f5a819d268cd01.jpg?auto=webp&format=pjpg&width=3840&quality=60');
+}
+
+.a-chulapa .img {
+    background-image: url('https://www.desafiomundial.com/wp-content/uploads/2023/04/Aloisio-Chulapa-49986.jpeg?b=0&c=0&width=800&height=533&top=9&left=0&zoom=0.666666666667');
+}
+
+
+.dagoberto .img {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/03/15/1128056702-gazeta-press-foto-388148.jpg');
+}
+
+.muricy .img {
+    background-image: url('https://assets.folhavitoria.com.br/images/3a2f1ea0-9889-0135-74d4-6231c35b6685--minified.jpeg');
+}
+
+.franca .img {
+    background-image: url('https://a.espncdn.com/photo/2023/0919/r1226778_1180x664_16-9.jpg');
+}
+
+
+
+
+.leandro-guerreiro  h3{
+ 
+    font-size: 20px;
+}
+
+.chulapa  h3{
+ 
+    font-size: 20px;
+}
+
+.card:hover .img {
+    width: 380px;
+    opacity: 1;
+}
+
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateX(30px);
+}
+
+.card:hover .content {
+
+    height: 300px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.chulapa {
+    text-align: center;
+}
+
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+footer p {
+    color: #ffff;
+    text-align: end;
+    padding-top: 75px;
+    padding-right: 25px;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.075) 100%);
+    height: 100px;
+    padding-bottom: 1px;
+    justify-items: center;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+footer img {
+    width: 110px;
+    margin-top: 65px;
+    margin-right: 50px;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    
+}
